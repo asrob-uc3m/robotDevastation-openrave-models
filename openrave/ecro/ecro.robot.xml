@@ -139,7 +139,7 @@
             <rotationaxis>0 1 0 90</rotationaxis>
             <rotationaxis>1 0 0 -90</rotationaxis>
             <sensor type="BaseCamera">
-                <KK>640 640 320 240</KK>
+                <KK>640 480 320 240</KK>
                 <width>640</width>
                 <height>480</height>
                 <!--KK>32 24 32 24</KK>
