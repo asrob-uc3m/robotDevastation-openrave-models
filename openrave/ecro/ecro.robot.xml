@@ -1,4 +1,4 @@
-<robot name="ecroSim">
+<robot>
   <kinbody>
     <body name="base" type="dynamic">
       <geom type="box">
