@@ -1,7 +1,7 @@
 # robotDevastation-openrave-models
 robotDevastation OpenRAVE models.
 
-# Info on simulating QR codes ([ref](https://github.com/asrob-uc3m/robotDevastation-openrave-models/issues/4#issuecomment-373781813))
+## How to generate simulated QR codes ([ref](https://github.com/asrob-uc3m/robotDevastation-openrave-models/issues/4#issuecomment-373781813))
 1. Only once:
    1. Install https://github.com/welshjf/blender-local-qrcode via the .zip methid (clone --recursive, then run bundle.sh). Add and enable in Blender.
 1. In Blender:
