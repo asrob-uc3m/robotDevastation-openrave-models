@@ -1,0 +1,13 @@
+<robot name="qr1">
+    <RotationAxis>1 0 0 90</RotationAxis>
+    <KinBody name="qr1Kinbody">
+        <Body type="dynamic" name="qr1Main">
+           <Geom type="box">
+                <Render>./models/qr1.wrl</Render>
+                <Extents>.02 .07 .01</Extents>
+                <diffuseColor>0 0 0</diffuseColor>
+                <transparency>0.5</transparency>
+            </Geom>
+        </Body>
+    </KinBody>
+</robot>
