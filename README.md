@@ -1,5 +1,6 @@
 # robotDevastation-openrave-models
-robotDevastation OpenRAVE models.
+
+[Robot Devastation](http://asrob-uc3m.github.io/workgroups/2017-05-28-robot-devastation.html) OpenRAVE models.
 
 ## How to generate simulated QR codes ([ref](https://github.com/asrob-uc3m/robotDevastation-openrave-models/issues/4#issuecomment-373781813))
 1. Only once:
