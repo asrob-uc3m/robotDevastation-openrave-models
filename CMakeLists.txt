@@ -2,16 +2,26 @@
 # CopyPolicy: released under the terms of the LGPLv2.1, see LICENSE at project root.
 # URL: https://github.com/asrob-uc3m/robotDevastation
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 
 # Define a project.
-project(RD_OPENRAVE_MODELS)
+project(RD_OPENRAVE_MODELS LANGUAGES NONE)
 
-# Load custom CMake modules.
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+# Find hard dependencies.
+find_package(YCM REQUIRED)
+find_package(YARP REQUIRED)
 
-# Add main contents.
-add_subdirectory(openrave)
+if(YARP_VERSION_SHORT VERSION_LESS 2.3.70)
+    list(APPEND CMAKE_MODULE_PATH ${YARP_MODULE_PATH})
+    include(YarpInstallationHelpers)
+endif()
+
+# Set some useful variables.
+yarp_configure_external_installation(robotDevastation-openrave-models)
+
+# Install stuff.
+install(DIRECTORY openrave
+        DESTINATION ${ROBOTDEVASTATION-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR})
 
 # Store this package in the user registry.
 export(PACKAGE ${PROJECT_NAME})
