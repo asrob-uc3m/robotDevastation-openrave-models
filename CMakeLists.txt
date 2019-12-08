@@ -16,7 +16,7 @@ yarp_configure_external_installation(robotDevastation-openrave-models)
 
 # Install stuff.
 yarp_install(DIRECTORY openrave
-             DESTINATION ${ROBOTDEVASTATION-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR})
+             DESTINATION ${ROBOTDEVASTATION-OPENRAVE-MODELS_DATA_INSTALL_DIR})
 
 # Store this package in the user registry.
 export(PACKAGE ${PROJECT_NAME})
